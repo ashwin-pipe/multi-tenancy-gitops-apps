@@ -183,6 +183,7 @@ spec:
         echo "** Step publish-products **"
         echo "Hey buddy"
         pwd
+        echo
         echo "this is what i am searching"
         cd /source/apic-publish-pipeline/scripts/
         ls | grep toolkit
