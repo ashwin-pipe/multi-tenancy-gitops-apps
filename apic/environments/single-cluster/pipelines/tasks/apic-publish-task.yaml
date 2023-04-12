@@ -117,8 +117,9 @@ spec:
         else
             git clone $(params.git-apic-pipeline-git-url) $(params.source-dir)
         fi
-        ls
+        
         echo "this is what i am searching"
+        ls /source
         cd $(params.source-dir)
         git checkout $(params.git-apic-pipeline-git-branch)
     - name: initialize-config
