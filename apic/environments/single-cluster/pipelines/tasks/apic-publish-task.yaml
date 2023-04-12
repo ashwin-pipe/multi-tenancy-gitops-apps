@@ -183,10 +183,13 @@ spec:
         echo "** Step publish-products **"
         echo "***************************"
         # Pre-req for parsing YAML files and create HTTP requests
-        export PYTHONWARNINGS="ignore:Unverified HTTPS request"
-        python3 -mpip install PyYAML requests > /dev/null
-        cd scripts
-        python3 apic_platform_publish_to_catalog.py
+        #export PYTHONWARNINGS="ignore:Unverified HTTPS request"
+        #python3 -mpip install PyYAML requests > /dev/null
+        #cd scripts
+        #python3 apic_platform_publish_to_catalog.py
+        
+        echo "Hey buddy"
+        pwd
     - name: test-apis
       image: $(params.python-image)
       workingDir: $(params.source-dir)
