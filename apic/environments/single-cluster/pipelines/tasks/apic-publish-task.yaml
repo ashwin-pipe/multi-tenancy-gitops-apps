@@ -176,7 +176,7 @@ spec:
     #     python3 replace_api_yaml_env_param.py
     - name: publish-products
       image: $(params.python-image)
-      workingDir: /source/apic-publish-pipeline/scripts
+      workingDir: $(params.source-dir)
       script: |
         set +x
         echo "***************************"
