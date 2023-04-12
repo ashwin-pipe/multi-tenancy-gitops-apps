@@ -117,6 +117,8 @@ spec:
         else
             git clone $(params.git-apic-pipeline-git-url) $(params.source-dir)
         fi
+        ls
+        echo "this is what i am searching"
         cd $(params.source-dir)
         git checkout $(params.git-apic-pipeline-git-branch)
     - name: initialize-config
@@ -181,6 +183,8 @@ spec:
         set +x
         echo "***************************"
         echo "** Step publish-products **"
+        echo "Hey buddy"
+        pwd
         echo "***************************"
         # Pre-req for parsing YAML files and create HTTP requests
         #export PYTHONWARNINGS="ignore:Unverified HTTPS request"
@@ -188,8 +192,7 @@ spec:
         #cd scripts
         #python3 apic_platform_publish_to_catalog.py
         
-        echo "Hey buddy"
-        pwd
+        
     - name: test-apis
       image: $(params.python-image)
       workingDir: $(params.source-dir)
