@@ -184,6 +184,7 @@ spec:
         echo "***************************"
         echo "Hey buddy"
         pwd
+        ls /source
         echo
         echo "this is what i am searching"
         tar -xzvf /source/apic-publish-pipeline/scripts/toolkit-linux.tgz
