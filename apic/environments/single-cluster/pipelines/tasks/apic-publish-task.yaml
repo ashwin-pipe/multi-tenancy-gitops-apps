@@ -181,14 +181,6 @@ spec:
         set +x
         echo "***************************"
         echo "** Step publish-products **"
-        echo "Hey buddy"
-        pwd
-        echo
-        echo "this is what i am searching"
-        cd /source/apic-publish-pipeline/scripts/
-        ls | grep toolkit
-        ls /source/apic-publish-pipeline/config
-        echo "its a config mk"
         echo "***************************"
         # Pre-req for parsing YAML files and create HTTP requests
         #export PYTHONWARNINGS="ignore:Unverified HTTPS request"
