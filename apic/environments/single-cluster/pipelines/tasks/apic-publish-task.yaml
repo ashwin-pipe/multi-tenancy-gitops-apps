@@ -119,7 +119,7 @@ spec:
         fi
         echo "this is what i am searching"
         ls /source
-        ls /source/apic-publish-pipeline
+        ls /source/apic-publish-pipeline/scripts
         echo "not found"
         cd $(params.source-dir)
         git checkout $(params.git-apic-pipeline-git-branch)
