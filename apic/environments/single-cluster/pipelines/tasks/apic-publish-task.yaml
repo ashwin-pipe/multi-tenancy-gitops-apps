@@ -176,12 +176,21 @@ spec:
     #     python3 replace_api_yaml_env_param.py
     - name: publish-products
       image: $(params.python-image)
-      workingDir: $(params.source-dir)
+      workingDir: /source/apic-publish-pipeline/scripts
       script: |
         set +x
         echo "***************************"
         echo "** Step publish-products **"
         echo "***************************"
+        echo "Hey buddy"
+        pwd
+        echo
+        echo "this is what i am searching"
+        tar -xzvf /source/apic-publish-pipeline/scripts/toolkit-linux.tgz
+        ./apic -v
+        apic -v
+        ls /source/apic-publish-pipeline/config
+        echo "its a config mk"
         # Pre-req for parsing YAML files and create HTTP requests
         #export PYTHONWARNINGS="ignore:Unverified HTTPS request"
         #python3 -mpip install PyYAML requests > /dev/null
