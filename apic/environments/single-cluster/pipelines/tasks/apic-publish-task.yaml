@@ -120,7 +120,8 @@ spec:
         echo "this is what i am searching"
         cd /source/apic-publish-pipeline/scripts/
         ls | grep toolkit
-        echo "not found"
+        ls /source/apic-publish-pipeline/config
+        echo "its a config"
         cd $(params.source-dir)
         git checkout $(params.git-apic-pipeline-git-branch)
     - name: initialize-config
