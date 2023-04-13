@@ -182,12 +182,12 @@ spec:
         echo "***************************"
         echo "** Step publish-products **"
         echo "***************************"
-        echo "Hey ash"
-        echo $(pwd)
+        echo "Hey ashwin"
+        echo pwd is  $(pwd)
         ls
         echo
         echo "this is what i am searching"
-        tar -xzvf source/apic-publish-pipeline/scripts/toolkit-linux.tgz
+        tar -xzvf scripts/toolkit-linux.tgz
         ./apic -v
         apic -v
         ls source/apic-publish-pipeline/config
