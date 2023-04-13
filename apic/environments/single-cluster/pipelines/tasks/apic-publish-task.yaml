@@ -185,7 +185,7 @@ spec:
         echo "Hey ashcat"
         echo pwd is  $(pwd)
         ls
-        echo
+        
         echo "this is what i am searching"
         
         tar -xzvf scripts/toolkit-linux.tgz
@@ -194,6 +194,9 @@ spec:
         ./apic login --server apic-clust-6cccf7d7-api-manager-tools.itzroks-6650023xhj-g75cjx-4b4a324f027aea19c5cbc0c3275c4656-0000.eu-gb.containers.appdomain.cloud --realm provider/default-idp-2 --username supernova --password ashcat123
         
         ls source/apic-publish-pipeline/config
+        echo done
+
+
         echo "its a config mk"
         # Pre-req for parsing YAML files and create HTTP requests
         #export PYTHONWARNINGS="ignore:Unverified HTTPS request"
