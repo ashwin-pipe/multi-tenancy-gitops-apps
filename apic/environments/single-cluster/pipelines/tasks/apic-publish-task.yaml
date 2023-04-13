@@ -182,7 +182,7 @@ spec:
         echo "***************************"
         echo "** Step publish-products **"
         echo "***************************"
-        echo "Hey pipeline"
+        echo "Hey pipeline1"
         echo pwd is  $(pwd)
         ls
         
@@ -192,7 +192,7 @@ spec:
         chmod 777 apic
         ls scripts/
         ./apic login --server apic-clust-6cccf7d7-api-manager-tools.itzroks-6650023xhj-g75cjx-4b4a324f027aea19c5cbc0c3275c4656-0000.eu-gb.containers.appdomain.cloud --realm provider/default-idp-2 --username supernova --password ashcat123
-        
+        -y
         ls source/apic-publish-pipeline/config
         echo "done"
 
