@@ -182,13 +182,14 @@ spec:
         echo "***************************"
         echo "** Step publish-products **"
         echo "***************************"
-        echo "Hey ash"
+        echo "Hey ashcat"
         echo pwd is  $(pwd)
         ls
         echo
         echo "this is what i am searching"
         ls scripts/
                
+        ./apic login
         ls source/apic-publish-pipeline/config
         echo "its a config mk"
         # Pre-req for parsing YAML files and create HTTP requests
