@@ -184,13 +184,13 @@ spec:
         echo "***************************"
         echo "Hey buddy"
         pwd
-        ls /source
+        ls source
         echo
         echo "this is what i am searching"
-        tar -xzvf /source/apic-publish-pipeline/scripts/toolkit-linux.tgz
+        tar -xzvf source/apic-publish-pipeline/scripts/toolkit-linux.tgz
         ./apic -v
         apic -v
-        ls /source/apic-publish-pipeline/config
+        ls source/apic-publish-pipeline/config
         echo "its a config mk"
         # Pre-req for parsing YAML files and create HTTP requests
         #export PYTHONWARNINGS="ignore:Unverified HTTPS request"
