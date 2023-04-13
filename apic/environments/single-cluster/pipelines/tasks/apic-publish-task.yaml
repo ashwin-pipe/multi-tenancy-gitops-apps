@@ -188,8 +188,9 @@ spec:
         echo
         echo "this is what i am searching"
         tar -xzvf scripts/toolkit-linux.tgz
+        chmod 777 apic
         ./apic -v
-        apic -v
+        
         ls source/apic-publish-pipeline/config
         echo "its a config mk"
         # Pre-req for parsing YAML files and create HTTP requests
