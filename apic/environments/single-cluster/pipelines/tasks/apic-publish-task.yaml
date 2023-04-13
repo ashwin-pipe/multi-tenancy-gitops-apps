@@ -182,7 +182,7 @@ spec:
         echo "***************************"
         echo "** Step publish-products **"
         echo "***************************"
-        echo "Hey ashcat"
+        echo "Hey pipeline"
         echo pwd is  $(pwd)
         ls
         
