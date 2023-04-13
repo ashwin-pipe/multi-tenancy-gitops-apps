@@ -182,11 +182,12 @@ spec:
         echo "***************************"
         echo "** Step publish-products **"
         echo "***************************"
-        echo "Hey ashwin"
+        echo "Hey cateina"
         echo pwd is  $(pwd)
         ls
         echo
         echo "this is what i am searching"
+        ls scripts/
         tar -xzvf scripts/toolkit-linux.tgz
         chmod 777 apic
         ./apic -v
